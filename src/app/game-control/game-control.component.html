@@ -1,0 +1,12 @@
+<button 
+  (click)="startButtonClicked()" 
+  class="btn btn-primary"
+  [disabled]="isCounting">
+  Start
+</button>
+<button 
+  (click)="stopButtonClicked()" 
+  class="btn btn-primary"
+  [disabled]="!isCounting">
+  Stop
+</button>

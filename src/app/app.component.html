@@ -1,0 +1,5 @@
+<app-game-control (tick)='tick($event)'></app-game-control>
+<div *ngFor="let number of gameComponents">
+  <app-even *ngIf="number % 2 === 0; else oddBlock" [number]="number"></app-even>
+  <ng-template #oddBlock><app-odd [number]="number"></app-odd></ng-template>
+</div>
